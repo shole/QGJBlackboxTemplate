@@ -389,7 +389,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 867208028
+  randomSeed: -1219841949
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3760,9 +3760,10 @@ MonoBehaviour:
   execPath: BlackBox\box_compact.exe
   execArgs: 
   workingPath: BlackBox\
-  processCount: 25
+  processCount: 20
   maxQueueLength: 100
   queueOverflowOldest: 1
+  timeout: 3
   queriesSent: 0
   currentQueueLength: 0
   currentBusyProcesses: 0

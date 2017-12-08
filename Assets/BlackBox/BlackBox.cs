@@ -49,6 +49,22 @@ public class BlackBox : MonoBehaviour {
 			       + "\n"
 			       + level;
 		}
+
+		/*
+		public string ToString() {
+			return terminalA
+			       + ","
+			       + terminalB
+			       + ","
+			       + terminalC
+			       + ","
+			       + drive
+			       + ","
+			       + position
+			       + ","
+			       + level;
+		}
+		*/
 	}
 
 	public void SendQuery( // simplified version with default terminals
@@ -91,9 +107,8 @@ public class BlackBox : MonoBehaviour {
 			&& 0 <= query.level
 			&& query.level <= 5
 		) {
-			//Debug.Log(query.ToString().Replace('\n',','));
-			int id = proc.StdIn("" + query.ToString());
-			callRegistry.Add(id, query);
+			int guid = proc.StdIn("" + query.ToString());
+			callRegistry.Add(guid, query);
 		} else {
 			throw new Exception("Query value out of range!");
 		}
