@@ -1,0 +1,3 @@
+[submodule "Assets/UnityStdStreams"]
+	path = Assets/UnityStdStreams
+	url = https://github.com/shole/UnityStdStreams
